@@ -9,11 +9,11 @@ public class Email {
 	private String to;
 	private String templateName;
 	private String subject;
-	private Map<String, String> variables;
+	private Map<String, Object> variables;
 
 	public Email(){}
 	
-	public Email(String to, String templateName, String subject, Map<String, String> variables) {
+	public Email(String to, String templateName, String subject, Map<String, Object> variables) {
 		super();
 		this.to = to;
 		this.templateName = templateName;
@@ -45,11 +45,11 @@ public class Email {
 		this.subject = subject;
 	}
 
-	public Map<String, String> getVariables() {
+	public Map<String, Object> getVariables() {
 		return variables;
 	}
 
-	public void setVariables(Map<String, String> variables) {
+	public void setVariables(Map<String, Object> variables) {
 		this.variables = variables;
 	}
 
